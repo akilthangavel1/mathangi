@@ -1,0 +1,435 @@
+
+
+<html lang="en">
+    <!-- Mirrored from themelooks.biz/demo/socibook/html/preview/reviews.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 18:56:34 GMT -->
+    <head>
+        <title>Healthcare Bot - Mathangi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="preconnect" href="../../../../../fonts.gstatic.com/index.html" />
+        <link href="../../../../../fonts.googleapis.com/css24e1b.css?family=Open+Sans:wght@300;400;600&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/all.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='plugins/magnific-popup/magnific-popup.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/custom.css') }}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="offcanvas_menu">
+            <div class="offcanvas-overlay fixed-top w-100 h-100"></div>
+            <div class="offcanvas-wrapper fixed-top h-100">
+                <div class="offcanvas-close position-absolute"><i class="fa fa-times"></i></div>
+                <div class="offcanvas-content">
+                    <div class="user-profile">
+                        <div class="user-avatar"><img src="{{ url_for('static',filename='img/media/user.png') }}" alt="Avatar" /></div>
+                        <div class="user-info">
+                            <h5 class="user-name">Hi_Socibook</h5>
+                            <p class="user-email">UX Designer</p>
+                        </div>
+                    </div>
+                    <ul class="offcanvas-menu">
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/members_newsfeed.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Members Newsfeed</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/activity.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Activity</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/member.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Members</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/groups.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Groups</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/photo.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Photos</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/music.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Music</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/video.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Video</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/event.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Events</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/forum.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Forum</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/blog.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Our Blog</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/shop.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Shop</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-top">
+                <div class="sb-container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <div class="logo d-flex justify-content-center justify-content-sm-start">
+                                <a href="homepage"><img src="{{ url_for('static',filename='img/logo5.png') }}" class="main-logo" alt="" style="height: 100px"/></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-main love-sticky">
+                <div class="header-main-inner-wrap">
+                    <div class="sb-container">
+                        <div class="header-main-inner">
+                            <div class="row">
+                                <div class="col-lg-12 position-static">
+                                    <div class="align-items-center d-flex justify-content-between">
+                                        <div class="logo">
+                                            <a href="homepage"><img src="{{ url_for('static',filename='img/logo5.png') }}" class="main-logo" alt="" style="height: 70px"/></a>
+                                        </div>
+                                        <div class="nav-wrapper d-flex align-items-center justify-content-between w-100">
+                                            <div class="menu-wrap">
+                                                <ul class="nav">
+                                                    <li>
+                                                        <a class="current-menu-parent" href="homepage">Home</a>
+
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="healthbot">Health Bot</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <div>
+        <div class="stunning-header overlay" data-bg-img="{{ url_for('static',filename='img/bg/inback.jpg') }}">
+            <div class="sb-container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="stunning-header-content text-white text-center">
+                            <h5>AI BOT</h5>
+                            <h2>HEALTH CARE BOT</h2>
+                            <p>AI healthcare bot is an artificial intelligence (AI) system that is designed to assist and support healthcare professionals, patients, and their families in a variety of ways. Healthcare bots can be used in a wide range of healthcare settings, from hospitals and clinics to home healthcare.</p>
+                            <a href="{{ url_for('home') }}" class="btn-link">Back To Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="chose-us pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title text-center">
+                            <h2>Why Choose Us?</h2>
+                            <p>Healthcare bots can help improve the efficiency and effectiveness of healthcare services, <br>while also providing patients with more convenient access to healthcare information and support!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-choose text-center">
+                            <div class="icon"><img src="{{ url_for('static',filename='img/icons/choose1.svg') }}" alt="" class="svg"></div>
+                            <div class="content">
+                                <h3>Providing Medical Advice</h3>
+                                <p> Healthcare bots can provide patients with basic medical advice and guidance on how to manage their symptoms or conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-choose active text-center">
+                            <div class="icon"><img src="{{ url_for('static',filename='img/icons/choose2.svg') }}" alt="" class="svg"></div>
+                            <div class="content">
+                                <h3>Answering frequently asked questions</h3>
+                                <p>Healthcare bots can provide answers to frequently asked questions about healthcare services, insurance coverage, and other related topics.<equipment class=""></equipment></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-choose text-center">
+                            <div class="icon"><img src="{{ url_for('static',filename='img/icons/choose3.svg') }}" alt="" class="svg"></div>
+                            <div class="content">
+                                <h3>Assisting with medication </h3>
+                                <p>Healthcare bots can help patients manage their medications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="create-account pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="create-account-content">
+                            <div class="section-title style--two text-white">
+                                <h2>How to Health care bot can improve your life?</h2>
+                                <p>Health care bots, or chatbots designed for health-related purposes, have the potential to improve our lives in several ways:</p>
+                            </div>
+                            <ul class="feature-list text-white">
+                                <li class="media">
+                                    <div class="icon"><img src="{{ url_for('static',filename='img/icons/paper.svg') }}" alt="" class="svg"></div>
+                                    <div class="content media-body">
+                                        <h3>Improved accessibility</h3>
+                                        <p> Health care bots can provide round-the-clock accessibility to health-related information, allowing people to ask questions and receive immediate answers without needing to wait for a doctor's appointment.</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <div class="icon"><img src="{{ url_for('static',filename='img/icons/earning.svg') }}" alt="" class="svg"></div>
+                                    <div class="content media-body">
+                                        <h3>Increased efficiency</h3>
+                                        <p> Health care bots can help streamline administrative tasks, such as appointment scheduling, prescription refills, and medical record management, freeing up healthcare providers to focus on more complex cases.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="{{ url_for('healthbot') }}" class="btn btn-white">learn more</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="create-account-img"><img src="{{ url_for('static',filename='img/bg/acc.jpg') }}" alt=""> <img src="{{ url_for('static',filename='img/icons/dot-shape.png') }}" alt="" class="dot-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature layer pb-40 pt-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title text-center">
+                            <h2>Extra Features</h2>
+                            <p>Health care bots have the potential to significantly improve our lives by providing convenient and<br> accessible access to medical information and assistance. Here are some extra features that can enhance the effectiveness of a healthcare bot</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-feature style2">
+                            <div class="img"><img src="{{ url_for('static',filename='img/icons/feature7.png') }}" alt=""></div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3>Personalization</h3>
+                                </a>
+                                <p>A healthcare bot that can personalize its responses based on the user's health profile, medical history, and preferences can provide more accurate and relevant information.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-feature activate style2">
+                            <div class="img"><img src="{{ url_for('static',filename='img/icons/feature8.png') }}" alt=""></div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3>Virtual consultations</h3>
+                                </a>
+                                <p>A healthcare bot that can facilitate virtual consultations with healthcare professionals can save time and reduce the need for in-person visits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-feature style2">
+                            <div class="img"><img src="{{ url_for('static',filename='img/icons/feature9.png') }}" alt=""></div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3>Game Changer</h3>
+                                </a>
+                                <p>Healthcare bots have the potential to be game-changers in the industry by improving patient outcomes, increasing access to care, and reducing costs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-feature style2">
+                            <div class="img"><img src="{{ url_for('static',filename='img/icons/feature10.png') }}" alt=""></div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3>Mental health support</h3>
+                                </a>
+                                <p>A healthcare bot that can provide mental health support, can help users manage stress and improve their overall well-being.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-feature style2">
+                            <div class="img"><img src="{{ url_for('static',filename='img/icons/feature11.png') }}" alt=""></div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3>Emergency assistance</h3>
+                                </a>
+                                <p>A healthcare bot that can recognize emergency situations and provide immediate assistance or connect users with emergency services can be life-saving.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-feature style2">
+                            <div class="img"><img src="{{ url_for('static',filename='img/icons/feature12.png') }}" alt=""></div>
+                            <div class="content">
+                                <a href="#">
+                                    <h3>Enhanced patient outcomes</h3>
+                                </a>
+                                <p>Healthcare bots can help improve patient outcomes by providing timely and accurate diagnosis, treatment recommendations, and follow-up care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team section-bg pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-title text-center">
+                            <h2>How it Works?</h2>
+                            <p>AI bot involves several steps. Here is a high-level overview of the process.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="img"><img src="{{ url_for('static',filename='img/media/h1.jpg') }}" alt=""></div>
+                            <div class="content">
+                                <h3>Defining The Problem</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="img"><img src="{{ url_for('static',filename='img/media/h2.png') }}" alt=""></div>
+                            <div class="content">
+                                <h3>Collecting data</h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="img"><img src="{{ url_for('static',filename='img/media/h3.jpg') }}" alt=""></div>
+                            <div class="content">
+                                <h3>Training the bot</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="img"><img src="{{ url_for('static',filename='img/media/h4.jpg') }}" alt=""></div>
+                            <div class="content">
+                                <h3>Developing the interface</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="img"><img src="{{ url_for('static',filename='img/media/h5.jpg') }}" alt=""></div>
+                            <div class="content">
+                                <h3>Test and refine</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="team-member">
+                            <div class="img"><img src="{{ url_for('static',filename='img/media/h6.jpg') }}" alt=""></div>
+                            <div class="content">
+                                <h3>Launch and monitor</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="sb-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-sm-5">
+                        <div class="footer-logo text-center text-sm-left mb-20 mb-sm-0">
+                            <a href="homepage"><img src="{{ url_for('static',filename='img/logo5.png') }}" alt="" class="logo" style="height: 100px;"/></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-7">
+                        <div class="footer-socials">
+                            <a href="https://twitter.com/" target="_blank"><img src="{{ url_for('static',filename='img/icons/twitter.svg') }}" alt="" class="svg" /> </a>
+                            <a href="https://github.com/" target="_blank"><img src="{{ url_for('static',filename='img/icons/github.svg') }}" alt="" class="svg" /> </a>
+                            <a href="https://dribbble.com/" target="_blank"><img src="{{ url_for('static',filename='img/icons/dribble.svg') }}" alt="" class="svg" /></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="footer-contact">
+                            <div class="media">
+                                <div class="icon"><img src="{{ url_for('static',filename='img/icons/phone.svg') }}" alt="" class="svg" /></div>
+                                <div class="media-body"><span>Give us a call</span> <a href="callto:300303036">300 30 30 36</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="sb-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-bottom-content text-center"><span>© 2023 AI HEALTH BOT.</span> All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <script>
+        function getBotResponse() {
+          var rawText = $("#textInput").val();
+          var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+          $("#textInput").val("");
+          $("#chatbox").append(userHtml);
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          $.get("/get", { msg: rawText }).done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+        }
+        $("#textInput").keypress(function(e) {
+            if(e.which == 13) {
+                getBotResponse();
+            }
+        });
+        $("#buttonInput").click(function() {
+          getBotResponse();
+        })
+    S</script>
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/menu.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='plugins/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/custom.js') }}"></script>
+</body>
+<!-- Mirrored from themelooks.biz/demo/socibook/html/preview/reviews.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 18:56:47 GMT -->
+</html>
+
+
+
+</div>
+</body>
+</html>

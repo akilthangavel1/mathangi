@@ -1,0 +1,257 @@
+
+
+<html lang="en">
+    <!-- Mirrored from themelooks.biz/demo/socibook/html/preview/reviews.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 18:56:34 GMT -->
+    <head>
+        <title>Healthcare Bot - Mathangi</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="preconnect" href="../../../../../fonts.gstatic.com/index.html" />
+        <link href="../../../../../fonts.googleapis.com/css24e1b.css?family=Open+Sans:wght@300;400;600&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/all.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='plugins/magnific-popup/magnific-popup.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/custom.css') }}" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="offcanvas_menu">
+            <div class="offcanvas-overlay fixed-top w-100 h-100"></div>
+            <div class="offcanvas-wrapper fixed-top h-100">
+                <div class="offcanvas-close position-absolute"><i class="fa fa-times"></i></div>
+                <div class="offcanvas-content">
+                    <div class="user-profile">
+                        <div class="user-avatar"><img src="{{ url_for('static',filename='img/media/user.png') }}" alt="Avatar" /></div>
+                        <div class="user-info">
+                            <h5 class="user-name">Hi_Socibook</h5>
+                            <p class="user-email">UX Designer</p>
+                        </div>
+                    </div>
+                    <ul class="offcanvas-menu">
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/members_newsfeed.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Members Newsfeed</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/activity.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Activity</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/member.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Members</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/groups.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Groups</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/photo.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Photos</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/music.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Music</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/video.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Video</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/event.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Events</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/forum.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Forum</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/blog.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Our Blog</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ url_for('static',filename='img/icons/shop.svg') }}" alt="" class="svg" /> <span class="left-menu-title">Shop</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header-top">
+                <div class="sb-container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <div class="logo d-flex justify-content-center justify-content-sm-start">
+                                <a href="homepage"><img src="{{ url_for('static',filename='img/logo5.png') }}" class="main-logo" alt="" style="height: 100px"/></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-main love-sticky">
+                <div class="header-main-inner-wrap">
+                    <div class="sb-container">
+                        <div class="header-main-inner">
+                            <div class="row">
+                                <div class="col-lg-12 position-static">
+                                    <div class="align-items-center d-flex justify-content-between">
+                                        <div class="logo">
+                                            <a href="{{ url_for('home') }}"><img src="{{ url_for('static',filename='img/logo5.png') }}" class="main-logo" alt="" style="height: 70px"/></a>
+                                        </div>
+                                        <div class="nav-wrapper d-flex align-items-center justify-content-between w-100">
+                                            <div class="menu-wrap">
+                                                <ul class="nav">
+                                                    <li>
+                                                        <a class="current-menu-parent" href="{{ url_for('home') }}">Home</a>
+
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="{{ url_for('healthbot') }}">Health Bot</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% block content %}
+        <div class="sb-profile-header">
+            <div class="sb-header-cover" data-bg-img="{{ url_for('static',filename='img/bg/botcover4.jpg') }}">
+
+            </div>
+
+        </div>
+
+        <div class="sb-profile-navmenu">
+            <div class="sb-container">
+                <div class="row align-items-center">
+                    <div class="col-sm-9">
+
+                    </div>
+                    <div class="col-sm-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="section-bg2 py-40">
+            <div class="sb-container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+
+                    </div>
+                    <div class="col-lg-8 col-xl-9">
+                        <div class="activity-main-panel">
+                            
+                            <h4>CHAT WITH AI HEALTH BOT</h4>
+                            
+                                <div class="bbp-forum-reviews">
+                                    <div id="chatbox">
+                                    
+                                        <div class="bbp-reviews">
+                                            <div class="bbp-reviews-head">
+                                                <div class="profile">
+                                                    <a href="#" class="img"><img src="{{ url_for('static',filename='img/aiicon.jpg') }}" alt="" /> <span class="avatar-status"></span></a>
+                                                    <div class="info">
+                                                        <a href="#"><h5 class="author_name">HEALTH BOT</h5></a><span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bbp-reviews-body"><p>Hi There! What is your name?</p></div>
+                                        </div>
+                                    </div>
+                                    <input id="textInput" type="text" name="msg" placeholder="Message">
+                                    <input id="buttonInput" type="submit" value="Send">
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <br>
+            <br>
+            </div>
+        </main>
+        <div id="userInput">
+            
+          </div>
+        {% endblock %}
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="sb-container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-sm-5">
+                            <div class="footer-logo text-center text-sm-left mb-20 mb-sm-0">
+                                <a href="homepage"><img src="{{ url_for('static',filename='img/logo5.png') }}" alt="" class="logo" style="height: 100px;"/></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-7">
+                            <div class="footer-socials">
+                                <a href="https://twitter.com/" target="_blank"><img src="{{ url_for('static',filename='img/icons/twitter.svg') }}" alt="" class="svg" /> </a>
+                                <a href="https://github.com/" target="_blank"><img src="{{ url_for('static',filename='img/icons/github.svg') }}" alt="" class="svg" /> </a>
+                                <a href="https://dribbble.com/" target="_blank"><img src="{{ url_for('static',filename='img/icons/dribble.svg') }}" alt="" class="svg" /></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-none d-lg-block">
+                            <div class="footer-contact">
+                                <div class="media">
+                                    <div class="icon"><img src="{{ url_for('static',filename='img/icons/phone.svg') }}" alt="" class="svg" /></div>
+                                    <div class="media-body"><span>Give us a call</span> <a href="callto:300303036">300 30 30 36</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="sb-container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="footer-bottom-content text-center"><span>© 2023 AI HEALTH BOT.</span> All rights reserved.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        <script>
+            function getBotResponse() {
+              var rawText = $("#textInput").val();
+              var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+              $("#textInput").val("");
+              $("#chatbox").append(userHtml);
+              document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+              $.get("/get", { msg: rawText }).done(function(data) {
+                var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+                $("#chatbox").append(botHtml);
+                document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+              });
+            }
+            $("#textInput").keypress(function(e) {
+                if(e.which == 13) {
+                    getBotResponse();
+                }
+            });
+            $("#buttonInput").click(function() {
+              getBotResponse();
+            })
+        </script>
+        <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/menu.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='plugins/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/custom.js') }}"></script>
+    </body>
+    <!-- Mirrored from themelooks.biz/demo/socibook/html/preview/reviews.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2023 18:56:47 GMT -->
+</html>
+
+  
+
+    </div>
+  </body>
+</html>
